@@ -1,0 +1,21 @@
+@mixin main {
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: $main_font;
+		color: $main_text_color;
+	}
+}
+@mixin tablet {
+	@media only screen  and (max-width:800px){
+		@content;
+	}
+	
+}
+@mixin mobile {
+	@media only screen and (max-width:500px) {
+		@content;
+	}
+	
+}
