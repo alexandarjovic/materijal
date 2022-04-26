@@ -82,10 +82,7 @@ section {
                 text-align: center;
             }
             button{
-                background: $main_red;
-                color: white;
-                border: none;
-                padding: 0.5em 2em;
+                @include button-styles;
             }
         }
     }
@@ -177,6 +174,48 @@ footer{
             align-items: center;
             p{
                 padding: 1em;
+            }
+        }
+    }
+}
+@include mobile{
+    header{
+        background: black;
+        height: 35vh;
+        nav{
+            flex-direction: column;
+            h2{
+                font-size: smaller;
+            }
+            ul{
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+
+            }
+        }
+        div{
+            margin-top: 10%;
+
+        }
+    }
+    section{
+        height: 190vh;
+        .car-section{
+            div{
+                width: 100%;
+                button{
+                    padding: 2em 3em;
+                }
+            }
+        }
+    }
+    .table-section{
+        height: 30vh;
+        table{
+            display: none;
+            button{
+                @include button-styles;
             }
         }
     }

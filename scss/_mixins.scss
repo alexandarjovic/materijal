@@ -19,3 +19,9 @@
 	}
 	
 }
+@mixin button-styles {
+	background: $main_red;
+                color: white;
+                border: none;
+                padding: 0.5em 2em;
+}
